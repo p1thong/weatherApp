@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "jetbrains mono", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+}
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba , #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    border: 2px solid #dadada;
+}
+.search input:focus, .search input:hover{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow:  0 0 20px  rgba(0,0,0,0.6);
+    transition: .2s linear;
+}
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button:hover {
+    background: #60d4ae;
+    transition: linear .2s;
+    img {
+        content: url("./assets/img/ws.png");
+        width: 25px;
+    }
+    box-shadow:  0 0 20px  rgba(210, 205, 205, 0.6);
+}
+.search button:active {
+    background-color: #5fa9a2;
+}
+.search button img {
+    width: 25px;
+}
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
